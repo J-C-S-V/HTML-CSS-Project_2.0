@@ -7,83 +7,142 @@
   </head>
 
   <body>
-    <h1 id="title">My form</h1>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim quas
-      voluptatibus dolore nulla sit possimus architecto sapiente inventore.
-      Asperiores dolore deleniti voluptatibus fugiat voluptate rerum eaque
-      perspiciatis delectus officiis modi?
+      Thank you for taking the time to help us improve the platform
     </p>
     <form id="survey-form">
-      <label for="name" id="name-label">Name</label>
-      <input
-        id="name"
-        type="text"
-        placeholder="Enter you name"
-        required
-      /><br /><br /><br />
-      <label for="email" id="email-label">Email</label>
-      <input
-        id="email"
-        type="email"
-        placeholder="Enter you email"
-        required
-      /><br /><br /><br />
-      <label for="age" id="number-label">Age</label>
-      <input
-        id="number"
-        type="number"
-        placeholder="Age"
-        min="10"
-        max="99"
-        required
-      /><br /><br /><br />
+      <div>
+        <label for="name" id="name-label" class="questions">Name</label>
+        <input
+          class="questions_2"
+          id="name"
+          type="text"
+          placeholder="Enter you name"
+          required
+        />
+      </div>
+      <div>
+        <label for="email" id="email-label" class="questions">Email</label>
+        <input
+          class="questions_2"
+          id="email"
+          type="email"
+          placeholder="Enter you email"
+          required
+        />
+      </div>
 
-      <select id="dropdown">
+      <div>
+        <label for="age" id="number-label" class="questions">Age</label>
+        <input
+          id="number"
+          class="questions_2"
+          type="number"
+          placeholder="Age"
+          min="10"
+          max="99"
+          required
+        />
+      </div>
+
+      <label class="questions"
+        >Which option best describes your current role?</label
+      >
+
+      <select id="dropdown" class="questions_2">
+        <option disabled selected value="">Select current role</option>
         <option value="">Student</option>
         <option value="">Full time job</option>
         <option value="">Full time learner</option>
       </select>
 
-      <p>
-        <input type="radio" id="taste_1" name="option" value="Definitely" />
-        <label for="option_1">Definitely</label>
-      </p>
-      <p>
-        <input type="radio" id="taste_2" name="option" value="Maybe" />
-        <label for="option_2">Maybe</label>
-      </p>
-      <p>
-        <input type="radio" id="taste_2" name="option" value="Not Sure" />
-        <label for="option_3">Not Sure</label>
-      </p>
+      <label class="questions"
+        >Would you recommend freeCodeCamp to a friend?</label
+      >
+      <section id="radio-buttons">
+        <div>
+          <input type="radio" id="taste_1" name="option" value="Definitely" />
+          <label for="option_1">Definitely</label>
+        </div>
+        <div>
+          <input type="radio" id="taste_2" name="option" value="Maybe" />
+          <label for="option_2">Maybe</label>
+        </div>
+        <div>
+          <input type="radio" id="taste_2" name="option" value="Not Sure" />
+          <label for="option_3">Not Sure</label>
+        </div>
+      </section>
+      <label>What is your favorite feature of freeCodeCamp?</label>
 
-      <p>What would you like to see improved? (Check all that apply)</p>
+      <select class="questions_2">
+        <option disabled selected value="">Select an option</option>
+        <option value="">Challenges</option>
+        <option value="">Projects</option>
+        <option value="">Community</option>
+        <option value="">Open Source</option>
+      </select>
+
+      <label>What would you like to see improved? (Check all that apply)</label>
 
       <input
         type="checkbox"
+        value="11"
         name="like"
         value="Front-end Projects"
         id=""
       />Front-end Projects <br />
-      <input type="checkbox" name="like" id="Back-end Projects" />Back-end
-      Projects<br />
-      <input type="checkbox" name="like" id="Data Visualization" />Data
-      Visualization<br />
-      <input type="checkbox" name="like" id="Challenges" />Challenges<br />
-      <input type="checkbox" name="like" id="Open Source Community" />Open
-      Source Community<br />
-      <input type="checkbox" name="like" id="Gitter help rooms" />Gitter help
-      rooms<br />
-      <input type="checkbox" name="like" id="Videos" />Videos<br />
-      <input type="checkbox" name="like" id="City Meetups" />City Meetups<br />
-      <input type="checkbox" name="like" id="Wiki" />Wiki<br />
-      <input type="checkbox" name="like" id="Forum" />Forum<br />
-      <input type="checkbox" name="like" id="Additional Courses" />Additional
-      Courses<br />
+      <input
+        type="checkbox"
+        value="10"
+        name="like"
+        id="Back-end Projects"
+      />Back-end Projects<br />
+      <input
+        type="checkbox"
+        value="9"
+        name="like"
+        id="Data Visualization"
+      />Data Visualization<br />
+      <input
+        type="checkbox"
+        value="8"
+        name="like"
+        id="Challenges"
+      />Challenges<br />
+      <input
+        type="checkbox"
+        value="7"
+        name="like"
+        id="Open Source Community"
+      />Open Source Community<br />
+      <input
+        type="checkbox"
+        value="6"
+        name="like"
+        id="Gitter help rooms"
+      />Gitter help rooms<br />
+      <input type="checkbox" value="5" name="like" id="Videos" />Videos<br />
+      <input type="checkbox" value="4" name="like" id="City Meetups" />City
+      Meetups<br />
+      <input type="checkbox" value="3" name="like" id="Wiki" />Wiki<br />
+      <input type="checkbox" value="2" name="like" id="Forum" />Forum<br />
+      <input
+        type="checkbox"
+        value="1"
+        name="like"
+        id="Additional Courses"
+      />Additional Courses<br />
 
-      <textarea name="" id="" cols="30" rows="10"> </textarea>
-      <button type="submit" id="submit">Submit</button>
+      <label class="questions">Any comments or suggestions?</label>
+
+      <textarea
+        cols="45"
+        rows="10"
+        placeholder="Enter your comment here..."
+      ></textarea>
+      <button class="questions_2" type="submit" id="submit">Submit</button>
     </form>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

@@ -1,6 +1,61 @@
-#title{
-
+h1 {
+  margin: 20%;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  text-align: center;
 }
-#name{
-    
+
+p {
+  margin: 20%;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  text-align: center;
+  font-style: italic;
+}
+
+body {
+  color: #f3f3f3;
+  background-color: rgb(129, 129, 187);
+  font-size: 25px;
+
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+}
+
+form {
+  margin: 20%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 7%;
+  background-color: rgb(75, 75, 186);
+}
+
+label {
+  display: flex;
+  margin: 2%;
+  margin-left: 0;
+}
+
+input {
+  margin-left: 0;
+}
+
+#radio-buttons > div > label {
+  display: inline-block;
+}
+
+button {
+  display: flex;
+  margin-top: 2%;
+  color: white;
+  background-color: green;
+}
+
+.questions_2 {
+  width: 100%;
+  padding: 6px;
 }
