@@ -1,6 +1,5 @@
 body {
   color: #f3f3f3;
-  background-color: rgb(129, 129, 187);
   font-size: 25px;
 
   background-image: linear-gradient(
@@ -10,46 +9,61 @@ body {
     url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
 }
 
-h1 {
+h1,
+#description {
   margin: 20%;
   margin-top: 4px;
   margin-bottom: 4px;
   text-align: center;
 }
 
-p {
-  margin: 20%;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  text-align: center;
+#description {
   font-style: italic;
 }
 
 form {
-  margin: 20%;
+  margin: 10%;
   margin-top: 0;
   margin-bottom: 0;
   padding: 7%;
-  background-color: rgb(75, 75, 186);
+  background-color: rgba(13, 13, 144, 0.5);
 }
 
 label {
+  position: relative;
   display: flex;
-  margin: 2%;
+  margin: 10%;
   margin-left: 0;
   margin-top: 40px;
+}
+
+@media (min-width: 800px) {
+  form {
+    padding: 5.5rem;
+    margin: 27%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+input[type="radio"] {
+  position: absolute;
+  left: 140px;
+  top: 5px;
+}
+
+input {
+  position: absolute;
+  top: 35px;
 }
 
 #name-label {
   margin-top: 0;
 }
 
-input {
-  margin-left: 0;
-}
-
-#radio-buttons > div > label {
-  display: inline-block;
+.questions_2 {
+  width: 100%;
+  padding: 6px;
 }
 
 button {
@@ -57,9 +71,24 @@ button {
   margin-top: 2%;
   color: white;
   background-color: green;
+  cursor: pointer;
+  justify-content: center;
 }
 
-.questions_2 {
-  width: 100%;
-  padding: 6px;
+/* --------------- */
+
+#first-dropdown {
+  position: relative;
+  margin-top: 25%;
+  margin-bottom: 5%;
+}
+
+.input-checkbox[type="checkbox"] {
+  position: absolute;
+  left: 280px;
+  top: 2px;
+}
+
+#labels-checkboxes > label {
+  margin: 2%;
 }
